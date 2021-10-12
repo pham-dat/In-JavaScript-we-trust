@@ -682,7 +682,7 @@ Of the three, only `bind()` can be executed after binding. We can create a varia
 
 Note that `window.window.window.score` or `window.score` or simply `score` do the same thing. It points to the `score()` function in the global scope.
 
-The correct anwser is D. The `score()` and `getAge()` functions are nothing special. The only tricky part is that this.age is incremented each time.
+The correct anwser is D. The `score()` and `getAge()` functions are nothing special. The only tricky part is that `this.age` is incremented each time.
 
 </p>
 </details>
@@ -1107,7 +1107,7 @@ Comparing two arrays or two objects in JavaScript always return `false` because 
 
 In the expression function `f()`, we use arrow function here but and `{}` is a part of the function rather than an object. In case you want to return an object, you have to write as `let f = () => ({})` or simply using normal way to define function. With the keyword `return`, we can easily catch the content of the function when using normal way to define function.
 
-Thus, the `typeof f()` returns `undefined` rathern `object`. We then get the length 9 and the flag (true) becomes 'true' (a string, by using toString() function), which returns 3 with the property `length`. We finally get 13.
+Thus, the `typeof f()` returns `undefined` rather than `object`. We then get the length 9 and the flag (true) becomes 'true' (a string, by using toString() function), which returns 3 with the property `length`. We finally get 13.
 
 </p>
 </details>
