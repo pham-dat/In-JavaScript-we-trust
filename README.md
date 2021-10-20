@@ -1816,7 +1816,7 @@ The operator `...` in JavaScript is very handy. The function `converter` is quit
 
 First we have the constant `checking` with the value `function` given that `Number(false)` gives us 0 and that is the first index in the array `content`.
 
-Second, the constant `result` gives us the value `true` as the `typeof converter(content)` is `function`, which is also the value of `content[1]`.
+Second, the constant `result` gives us the value `true` as the `typeof converter(content)` is `object`, which is also the value of `content[1]`.
 
 Then in the final code, we have `checking = true`, and then `result = true` as well, so the final result is `(typeof converter).length` which is equivalent to `"function".length` because the `typeof of converter` is simply `function`. We get 8 after all and the correct answer is D.
 
